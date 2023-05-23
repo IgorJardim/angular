@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Programação</title>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="container-fluid" id="cabe">
+  <img src="../../assets/logo.png">
+            <form class="d-flex" role="search">
+            <input class="form-control" type="search" aria-label="Search">
+            <button class="btn" type="submit">Pesquisar</button>
+            <a class="Programaçãolink" link href="#">Programação</a>
+            <a class="Programaçãolink" link href="#">Promoções</a>
+          </form>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div class="P"><h1>Programação</h1> </div>   
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><h3>Dia</h3></th>
+            <th scope="col"><h3>Filmes</h3></th>
+            <th scope="col"><h3>Sala</h3></th>
+            <th scope="col"><h3>Horario</h3></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" *ngFor="let fm of FilmeData">
+          <tr>
+            <th scope="row"> <p>{{fm.Filmedata1}}</p> <br><br><p>{{fm.Filmedata2}}</p></th> 
+            
+            <td>
+            <img src="{{fm.FilmeImg}}">
+      <h2>{{fm.Filmename}}</h2>
+      <h2>{{fm.Filmepreco}}</h2>
+    
+            </td>
+            <td> <strong> <p>{{fm.Filmesala1}}</p><br><br><p> {{fm.Filmesala2}} </p> </strong></td>
+            <td> <strong><p>{{fm.Filmehora1}}</p> <br><br> <p>{{fm.Filmehora2}}</p></strong></td>
+          
+          </tr>
+          
+        </tbody>
+      </table>
+           <!--   <img src="../../assets/VF.png" id="VF"> -->
+         <!--  <img src="../../assets/HA.png"> -->
+<!-- <div class="catalogo">
+    <div class="sobre">
+      <table class="Dia">
+        <tr>
+          <th>Dia</th>
+          <th>Filmes</th>
+          <th>Sala</th>
+          <th>Horario</th>
+        </tr>
+      </table>
+
+        <h3 class="dia">Dia 
+          <hr>
+            <p>26/06</p>   <hr>
+            <p>12/07</p>   <hr></h3>   
+            <h3 class="Filmes">Filmes   <hr></h3>
+             <h3 class="Sala">Sala   <hr>
+                <p>1A</p>   <hr>
+                <p>3B</p>   <hr>
+             </h3> 
+              <h3 class="Horario">Horario   <hr>
+                <p>18:30</p>   <hr>
+                <p>20:00</p>   <hr>
+              </h3>               
+    </div>
+</div> -->
+</body>
+
+
+
+<footer>
+
+</footer>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
